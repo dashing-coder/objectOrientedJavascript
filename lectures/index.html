@@ -10,47 +10,61 @@
 
    <h2>My First JavaScript</h2>
 
-   <p id="date-time"></p>
-
+   <!-- <p id="date-time"></p>
    <button type="button" onclick="document.getElementById('date-time').innerHTML = Date()">
-      Click me to display Date & Time.</button>
+      Click me to display Date & Time.</button> -->
 
 
-   <p id="change-html"></p>
-   <button type="button" onclick='document.getElementById("change-html").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+   <!-- <p id="change-html"></p>
+   <button type="button" onclick='document.getElementById("change-html").innerHTML = "Hello JavaScript!"'>Click Me!</button> -->
 
    <p id="class"></p>
    <script>
-      /*class Car {
-         constructor(brand) {
-            this.carname = brand;
-         }
-      }
+      // class Car {
+      //    constructor(brand) {
+      //       this.carname = brand;
+      //    }
+      // }
 
-      mycar = new Car("Food");
+      // mycar = new Car("Food");
 
-      document.getElementById("class").innerHTML = mycar.carname;*/
+      // document.getElementById("class").innerHTML = mycar.carname;
 
    </script>   
 
 
    <p id="class-method"></p>
    <script>
-      class ClassMethod{
-         constructor(brand){
-            this.carname = brand;
-         }
-         present(){
-            return "I have a " + this.carname;
-         }
-      }
+      // class ClassMethod {
+      //    constructor(brand){
+      //       this.carname = brand;
+      //    }
+      //    present(){
+      //       return "I have a " + this.carname;
+      //    }
+      // }
 
-      mycar = new ClassMethod("Ford");
+      // mycar = new ClassMethod("Ford");
 
-      document.getElementById("class-method").innerHTML = mycar.present();
+      // document.getElementById("class-method").innerHTML = mycar.present();
 
    </script>
 
+   <p id="class-method-ref"></p>
+   <script>
+      class Car {
+         constructor(brand) {
+            this.carname = brand;
+         }
+         present(x) {
+            return x + ", I Have a " + this.carname;
+         }
+      }
+
+      mycar = new Car ("Ford");
+
+      document.getElementById("class-method-ref").innerHTML = mycar.present("Hello");
+   </script>
 
 </body>
 </html>
