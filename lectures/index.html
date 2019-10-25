@@ -21,7 +21,7 @@
 
    <p id="class"></p>
    <script>
-      class Car {
+      /*class Car {
          constructor(brand) {
             this.carname = brand;
          }
@@ -29,12 +29,27 @@
 
       mycar = new Car("Food");
 
-      document.getElementById("class").innerHTML = mycar.carname;
+      document.getElementById("class").innerHTML = mycar.carname;*/
 
    </script>   
 
 
+   <p id="class-method"></p>
+   <script>
+      class ClassMethod{
+         constructor(brand){
+            this.carname = brand;
+         }
+         present(){
+            return "I have a " + this.carname;
+         }
+      }
 
+      mycar = new ClassMethod("Ford");
+
+      document.getElementById("class-method").innerHTML = mycar.present();
+
+   </script>
 
 
 </body>
