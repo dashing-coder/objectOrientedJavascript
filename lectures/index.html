@@ -20,8 +20,19 @@
    <button type="button" onclick='document.getElementById("change-html").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 
    <p id="class"></p>
+   <script>
+      class Car {
+         constructor(brand) {
+            this.carname = brand;
+         }
+      }
 
-      
+      mycar = new Car("Food");
+
+      document.getElementById("class").innerHTML = mycar.carname;
+
+   </script>   
+
 
 
 
